@@ -1,7 +1,10 @@
 export SHELL=/bin/zsh
-
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export GRADLE_HOME=/usr/local/gradle/gradle-3.1/bin
+export CATALINA_HOME=/usr/local/Cellar/tomcat7/7.0.70/libexec
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$JAVA_HOME:$GRADLE_HOME:$GROOVY_HOME:$CATALINA_HOME
+echo Path is $PATH
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
